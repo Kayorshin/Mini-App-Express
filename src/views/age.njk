@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/styles/index.css">
+  <title>Age</title>
+</head>
+<body>
+  {% if major %}
+    <div class="app__container app__container--green">
+      <i class="app__logo fas fa-id-card"></i>
+      <h2 class="app__text">Você é maior de idade e possui {{ age }} anos</h2>
+    </div>
+  {% else %}
+    <div class="app__container app__container--blue">
+      <i class="app__logo fas fa-id-card"></i>
+      <h2 class="app__text">Você é menor de idade e possui {{ age }} anos</h2>
+    </div>
+  {% endif %}
+</body>
+</html>

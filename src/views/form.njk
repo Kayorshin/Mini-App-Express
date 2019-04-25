@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/styles/index.css">
+  <title>Form</title>
+</head>
+<body>
+  <div class="app__container">
+    <h2 class="app__text">Descubra se é maior de idade ou não</h2>
+    <form class="app__form" action="/check" method="POST">
+      <input class="app__input" type="number" name="age" min="1" max="100" required>
+      <button class="app__button" type="submit">
+        Descobrir
+      </button>
+    </form>
+  </div>
+</body>
+</html>
